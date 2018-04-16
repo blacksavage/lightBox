@@ -1,0 +1,104 @@
+body {
+    font-size: 14px;
+}
+
+p {
+    margin: 0;
+}
+
+#G-lightBox-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 10000;
+    display: none;
+}
+*html #G-lightBox-mask {
+    position: absolute;
+}
+
+#G-lightBox-popup {
+    position: fixed;
+    left: 50%;
+    top: 50px;
+    width: 400px;
+    margin-left: -200px;
+    background-color: #fff;
+    z-index: 10001;
+    display: none;
+}
+*html #G-lightBox-popup {
+    position: absolute;
+}
+
+#G-lightBox-popup .lightBox-pic-view {
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 3px;
+    background: #fff url("../icon/loading.gif") no-repeat center;
+    overflow: hidden;
+}
+
+#G-lightBox-popup .lightBox-pic-view .lightBox-btn {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    background: url("../icon/transparent.png") repeat;
+}
+
+#G-lightBox-popup .lightBox-pic-view .lightBox-prev-btn {
+    left: 0;
+}
+
+#G-lightBox-popup .lightBox-pic-view .lightBox-next-btn {
+    right: 0;
+}
+
+#G-lightBox-popup .lightBox-pic-view .lightBox-prev-btn-show {
+    background: url("../icon/prev.png") no-repeat left center;
+    cursor: pointer;
+}
+
+#G-lightBox-popup .lightBox-pic-view .lightBox-next-btn-show {
+    background: url("../icon/next.png") no-repeat right center;
+    cursor: pointer;
+}
+
+#G-lightBox-popup .lightBox-pic-view .lightBox-image {
+    display: block;
+}
+
+#G-lightBox-popup .lightBox-pic-caption {
+    position: relative;
+    height: 56px;
+    margin: -61px 5px 0;
+    background: url("../icon/opacity.png") repeat;
+    line-height: 19px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#G-lightBox-popup .lightBox-pic-caption .lightBox-caption-area {
+    margin: 10px 5px 0;
+    color: #fff;
+}
+
+#G-lightBox-popup .lightBox-pic-caption .lightBox-caption-area .lightBox-of-index {
+    color: #999;
+}
+
+#G-lightBox-popup .lightBox-pic-caption .lightBox-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 27px;
+    height: 27px;
+    background: url("../icon/close.png") no-repeat center;
+}

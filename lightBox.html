@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/lightBox.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lightBox.js"></script>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('#G-lightBox-mask, #G-lightBox-popup .lightBox-pic-view .lightBox-btn, #G-lightBox-popup .lightBox-pic-caption');
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div>第一组图片</div>
+<img class="js-lightBox"
+     data-role="lightBox"
+     data-source="images/1-1.jpg"
+     src="images/1-1.jpg"
+     data-group="group-1"
+     data-id="1"
+     data-caption="标题"
+     width="100"
+     height="100"
+>
+<img class="js-lightBox"
+     data-role="lightBox"
+     data-source="images/1-2.jpg"
+     src="images/1-2.jpg"
+     data-group="group-1"
+     data-id="qewqewq"
+     data-caption="标题"
+     width="100"
+     height="100"
+>
+<img class="js-lightBox"
+     data-role="lightBox"
+     data-source="images/1-3.jpg"
+     src="images/1-3.jpg"
+     data-group="group-1"
+     data-id="321321"
+     data-caption="标题"
+     width="100"
+     height="100"
+>
+<div>第二组图片</div>
+<img class="js-lightBox"
+     data-role="lightBox"
+     data-source="images/2-1.jpg"
+     src="images/2-1.jpg"
+     data-group="group-2"
+     data-id="weqeqweqw"
+     data-caption="标题"
+     width="100"
+     height="100"
+>
+
+
+<script type="text/javascript">
+    $(function () {
+        var lightBox = new LightBox({
+            speed: 200
+        });
+    })
+</script>
+
+</body>
+</html>
